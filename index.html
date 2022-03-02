@@ -1,9 +1,26 @@
 <!Doctype>
 <html>
+  
+  <style>
+    .a,.b{
+      height:300px;
+    }
+    .a{
+      clip-path:polygon(0 0,100% 0, 100% 100%,0 calc(100%-80px));
+      color:#FE8F8F;
+    }
+    .b{
+      clip-path:polygon(0 0,100% 80px, 100% 100%,0 100%);
+      margin-top:-60px;
+      background:#A0D1FF;
+  </style>
   <head>
     <title> Just Like that!</title>
   </head>
   <body>
-    <p> Hello</p>
+    <main class="container">
+      <section class="a">Hello</section>
+      <section class="b"></section>
+    </main>
   </body>
 </html>
